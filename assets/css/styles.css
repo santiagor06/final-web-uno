@@ -1,10 +1,10 @@
 :root{
-    --primary-color:#3b5e8c
-    --secondary-color:#f0d5c0
-    --orange:#dc7364
-    -sm:12px
-    -md:16px
-    -lg:20px
+    --primary-color:#3b5e8c;
+    --secondary-color:#f0d5c0;
+    --orange:#dc7364;
+    --sm:12px;
+    --md:16px;
+    --lg:20px;
 }
 
 *{
@@ -13,4 +13,85 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary-color);
 }
+.card {
+    
+    width: 190px;
+    height: 254px;
+    background: var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #8f8ae66b;
+   }
+   
+   .card .card-border-top {
+    width: 60%;
+    height: 3%;
+    background: var(--orange);
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+   }
+   
+   .card span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+   }
+   
+   .card .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+   }
+   
+   .card .img {
+    width: 70px;
+    height: 80px;
+    background: var(--orange);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+   }
+   
+   .card button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: var(--orange);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+   }
+   
+   .card button:hover {
+    background: #de604d;
+   }
+   header{
+    background-color: var(--primary-color);
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+   }
+   #container-empleados{
+    display: grid;
+    width: 100%;
+    margin-top: 24px;
+    justify-items: center;
+    gap: 24px;
+    
+   
+   }
+   @media (min-width:450px){
+    #container-empleados{
+        grid-template-columns: repeat(auto-fill,200px) 
+    }
+   }
