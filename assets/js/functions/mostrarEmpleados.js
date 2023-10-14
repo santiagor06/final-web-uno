@@ -1,5 +1,5 @@
 import { volverMayuscula } from "./volverMayuscula.js";
-
+const modal=document.querySelector("#modal")
 const crearCardEmpleado=(empleados)=>{
     const cards=[]
 empleados.forEach(empleado => {
@@ -19,6 +19,7 @@ empleados.forEach(empleado => {
     jobTitle.classList.add("job")
     jobTitle.append(volverMayuscula(empleado.cargo))
     const button=document.createElement("button")
+    button.addEventListener("click",()=>modal.showModal())
     button.append("click")
     card.append(cardTop,cardImage,span,jobTitle,button);
     cards.push(card)

@@ -108,6 +108,9 @@ h1{
     
    
    }
+   #modal{
+    margin: auto;
+   }
    @media (min-width:450px){
     #container-empleados{
         grid-template-columns: repeat(auto-fill,200px) 
