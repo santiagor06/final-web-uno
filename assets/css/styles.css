@@ -1,7 +1,8 @@
 :root{
-    --primary-color:#3b5e8c;
-    --secondary-color:#f0d5c0;
-    --orange:#dc7364;
+    --soft-color:#f4f4f9;
+    --yellow:#ebc42a;
+    --white:#fafafa;
+    --black:#1c1c1c;
     --sm:12px;
     --md:16px;
     --lg:20px;
@@ -13,28 +14,28 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 .card {
     
     width: 190px;
     height: 254px;
-    background: var(--primary-color);
+    background: var(--black);
     border-radius: 15px;
-    box-shadow: 1px 5px 60px 0px #8f8ae66b;
+    box-shadow: 1px 5px 60px 0px #a2a2ae6b;
    }
    
    .card .card-border-top {
     width: 60%;
     height: 3%;
-    background: var(--orange);
+    background: var(--yellow);
     margin: auto;
     border-radius: 0px 0px 15px 15px;
    }
    
    .card span {
     font-weight: 600;
-    color: white;
+    color: var(--white);
     text-align: center;
     display: block;
     padding-top: 10px;
@@ -43,7 +44,7 @@ body{
    
    .card .job {
     font-weight: 400;
-    color: white;
+    color: var(--yellow);
     display: block;
     text-align: center;
     padding-top: 3px;
@@ -66,22 +67,23 @@ body{
     border-radius: 8px;
     border: none;
     margin-top: 30px;
-    background: var(--orange);
+    background: var(--yellow);
     color: white;
     font-weight: 600;
     cursor: pointer;
    }
    
    .card button:hover {
-    background: #de604d;
+    background: #424040;
    }
    .img img{
     width: 70px;
     height: 80px;
     border-radius: 15px;
+    object-fit: cover;
    }
    header{
-    background-color: var(--primary-color);
+    background-color: var(--black);
     padding: 4px;
     display: flex;
     justify-content: center;
