@@ -1,3 +1,5 @@
+import { mostrarDetalleEmpleado } from "./mostrarDetalleEmpleado.js";
+import { mostrarFormPago } from "./mostrarFormPago.js";
 import { volverMayuscula } from "./volverMayuscula.js";
 const modal=document.querySelector("#modal")
 const showModal=()=>{
@@ -19,15 +21,20 @@ empleados.forEach(empleado => {
     image.src=empleado.imagen
     cardImage.append(image)
     const span=document.createElement("span")
-    
-   span.append(`${volverMayuscula (empleado.nombre)} ${volverMayuscula(empleado.apellido)}`)
+    span.append(`${volverMayuscula (empleado.nombre)} ${volverMayuscula(empleado.apellido)}`)
     const jobTitle=document.createElement("p")
     jobTitle.classList.add("job")
     jobTitle.append(volverMayuscula(empleado.cargo))
-    const button=document.createElement("button")
-    button.addEventListener("click",()=>showModal())
-    button.append("click")
-    card.append(cardTop,cardImage,span,jobTitle,button);
+    const detail=document.createElement("button")
+    detail.addEventListener("click",()=>mostrarDetalleEmpleado())
+    detail.append("Detail")
+    const pay=document.createElement("button")
+    pay.addEventListener("click",()=>mostrarFormPago())
+    pay.append("Pay")
+    const containerButton=document.createElement("div");
+    containerButton.classList.add("container-button")
+    containerButton.append(detail,pay)
+    card.append(cardTop,cardImage,span,jobTitle,containerButton);
     cards.push(card)
 });
 return cards;
