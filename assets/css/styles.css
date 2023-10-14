@@ -13,8 +13,15 @@
     padding: 0
 }
 body{
+    font-family: 'Bebas Neue', sans-serif;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--primary-color);
+}
+h1{
+    color: var(--yellow);
+    font-family:"Bebas Neue";
+    text-align: center;
+    font-size: 90px;
 }
 .card {
     
@@ -85,6 +92,7 @@ body{
    header{
     background-color: var(--black);
     padding: 4px;
+    margin-bottom: 16px;
     display: flex;
     justify-content: center;
    }
