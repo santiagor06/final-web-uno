@@ -102,4 +102,13 @@ body{
     #container-empleados{
         grid-template-columns: repeat(auto-fill,200px) 
     }
+    header{
+        display: block;
+    }
+    header img{
+        width: 150px;
+        height: 50px;
+        padding: 8px;
+    }
+    
    }
