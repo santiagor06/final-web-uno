@@ -110,6 +110,24 @@ h1{
    }
    #modal{
     margin: auto;
+    background-color: var(--black);
+    padding: 16px;
+    border: nones;
+    border-radius: 15px;
+    max-width: 360px;
+    
+   }
+   #close{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+   }
+   #container-close{
+   display: flex;
+   justify-content: flex-end;
+   }
+   #modal::backdrop{
+        background-color: rgba(0, 0, 0, .55);
    }
    @media (min-width:450px){
     #container-empleados{
