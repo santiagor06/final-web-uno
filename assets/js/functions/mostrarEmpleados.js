@@ -1,3 +1,5 @@
+import { volverMayuscula } from "./volverMayuscula.js";
+
 const crearCardEmpleado=(empleados)=>{
     const cards=[]
 empleados.forEach(empleado => {
@@ -11,10 +13,11 @@ empleados.forEach(empleado => {
     image.src=empleado.imagen
     cardImage.append(image)
     const span=document.createElement("span")
-   span.append(`${empleado.nombre} ${empleado.apellido}`)
+    
+   span.append(`${volverMayuscula (empleado.nombre)} ${volverMayuscula(empleado.apellido)}`)
     const jobTitle=document.createElement("p")
     jobTitle.classList.add("job")
-    jobTitle.append(empleado.cargo)
+    jobTitle.append(volverMayuscula(empleado.cargo))
     const button=document.createElement("button")
     button.append("click")
     card.append(cardTop,cardImage,span,jobTitle,button);
