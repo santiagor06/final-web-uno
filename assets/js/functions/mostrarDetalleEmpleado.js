@@ -3,8 +3,12 @@ export const mostrarDetalleEmpleado=()=>{
     const close=document.querySelector("#close")
     modal.showModal()
     close.addEventListener("click",()=>modal.close())
-    const prueba=document.createElement("h2")
-    prueba.append("Detalle Empleado")
-    modal.innerHTML=prueba
+    // const prueba=document.createElement("h2")
+    // prueba.append("Mostar Detalle empleado")
+    // const container=document.querySelector("#container-dialog")
+    // const hijo=container.firstChild;
+    // if(hijo)container.removeChild(hijo)
+    // container.append(prueba)
+    
 
 }

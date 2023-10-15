@@ -29,7 +29,7 @@ empleados.forEach(empleado => {
     detail.addEventListener("click",()=>mostrarDetalleEmpleado())
     detail.append("Detail")
     const pay=document.createElement("button")
-    pay.addEventListener("click",()=>mostrarFormPago())
+    pay.addEventListener("click",()=>mostrarFormPago(empleado))
     pay.append("Pay")
     const containerButton=document.createElement("div");
     containerButton.classList.add("container-button")

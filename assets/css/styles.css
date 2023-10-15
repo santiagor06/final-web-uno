@@ -121,6 +121,7 @@ h1{
     border: nones;
     border-radius: 15px;
     max-width: 360px;
+    width: 300px;
 
    }
    #close{
@@ -134,6 +135,103 @@ h1{
    }
    #modal::backdrop{
         background-color: rgba(0, 0, 0, .55);
+   }
+
+   #form-pay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    gap: 32px;
+    color: var(--white);
+   }
+   #form-pay h2{
+    text-align: center;
+   }
+
+   .group {
+    position: relative;
+  
+   }
+   
+   .input {
+    color: var(--white);
+    font-size: 16px;
+    margin: auto;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    background: transparent;
+   }
+   
+   .input:focus {
+    outline: none;
+   }
+   
+   label {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 40px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: var(--yellow);
+   }
+   
+   .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+   }
+   
+
+   
+   .bar:before {
+    left: 50%;
+   }
+   
+   .bar:after {
+    right: 50%;
+   }
+   
+   .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+   }
+   
+   .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 80;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+   .input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+   @keyframes inputHighlighter {
+    from {
+     background: var(--white);
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
    }
    @media (min-width:450px){
     #container-empleados{
