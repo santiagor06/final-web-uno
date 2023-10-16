@@ -1,3 +1,4 @@
+import { calcularSalario } from "./calcularSalario.js";
 import { setModal } from "./setModal.js"
 import { volverMayuscula } from "./volverMayuscula.js";
 
@@ -23,6 +24,7 @@ const crearFormPago=(empleado)=>{
     const containerValue=document.createElement("div")
      containerValue.classList.add("group")
     const inputValue=document.createElement("input")
+    inputValue.addEventListener("input",()=>calcularSalario())  
     inputValue.type="number"
     inputValue.classList.add("input")
     inputValue.id="value"
@@ -38,7 +40,8 @@ const crearFormPago=(empleado)=>{
     const containerNumber=document.createElement("div")
      containerNumber.classList.add("group")
      const inputNumber=document.createElement("input")
-     inputNumber.type="number"
+     inputNumber.addEventListener("input",()=>calcularSalario())  
+    inputNumber.type="number"
      inputNumber.classList.add("input")
      inputNumber.id="number"
     inputNumber.value=0
@@ -53,6 +56,7 @@ const crearFormPago=(empleado)=>{
     const containerExtra=document.createElement("div")
      containerExtra.classList.add("group")
      const inputExtra=document.createElement("input")
+      inputExtra.addEventListener("input",()=>calcularSalario())  
      inputExtra.type="number"
      inputExtra.classList.add("input")
      inputExtra.id="extra"
@@ -72,6 +76,7 @@ const crearFormPago=(empleado)=>{
     const baseTitle=document.createElement("p")
     baseTitle.append("Base Salary:")
     const baseValue=document.createElement("p")
+    baseValue.id="base-salary"
     baseValue.append("$0")
     checkoutBase.append(baseTitle,baseValue)
     
@@ -80,6 +85,8 @@ const crearFormPago=(empleado)=>{
     const extraTitle=document.createElement("p")
     extraTitle.append("Extra Hours:")
     const extraValue=document.createElement("p")
+    extraValue.id="extra-hour"
+
     extraValue.append("$0")
     checkoutExtra.append(extraTitle,extraValue)
 
@@ -88,6 +95,8 @@ const crearFormPago=(empleado)=>{
     const chargeTitle=document.createElement("p")
     chargeTitle.append("Extra Charge:")
     const chargeValue=document.createElement("p")
+    chargeValue.id="extra-charge"
+
     chargeValue.append("$0")
     checkoutCharge.append(chargeTitle,chargeValue)
 
@@ -96,6 +105,8 @@ const crearFormPago=(empleado)=>{
     const totalTitle=document.createElement("p")
     totalTitle.append("Total Salary:")
     const totalValue=document.createElement("p")
+    totalValue.id="total-salary"
+
     totalValue.append("$0")
     checkoutTotal.append(totalTitle,totalValue)
 
