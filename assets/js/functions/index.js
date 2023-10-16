@@ -1,1 +1,0 @@
-export { prueba } from "./prueba.js";
