@@ -5,11 +5,12 @@ const container=document.querySelector("#container-dialog")
 export const mostrarFormPago=(empleado)=>{
     setModal()
      const hijo=container.firstChild;
-     console.log(hijo)
     if(hijo)container.removeChild(hijo)
     crearFormPago(empleado)
    
 }
+
+
 const crearFormPago=(empleado)=>{
     const form=document.createElement("form")
     form.id="form-pay"
@@ -24,19 +25,23 @@ const crearFormPago=(empleado)=>{
     const inputValue=document.createElement("input")
     inputValue.type="number"
     inputValue.classList.add("input")
- 
-    const highlightValue=document.createElement("span")
+    inputValue.id="value"
+    inputValue.value=0
+     const highlightValue=document.createElement("span")
     highlightValue.classList.add("highlight")
     const barValue=document.createElement("span")
     barValue.classList.add("bar")
     const labelValue=document.createElement("label")
     labelValue.append("Value/Hour")
     containerValue.append(inputValue,highlightValue,barValue,labelValue)
+
     const containerNumber=document.createElement("div")
      containerNumber.classList.add("group")
      const inputNumber=document.createElement("input")
      inputNumber.type="number"
      inputNumber.classList.add("input")
+     inputNumber.id="number"
+    inputNumber.value=0
      const highlightNumber=document.createElement("span")
     highlightNumber.classList.add("highlight")
     const barNumber=document.createElement("span")
@@ -44,11 +49,14 @@ const crearFormPago=(empleado)=>{
     const labelNumber=document.createElement("label")
     labelNumber.append("Number/Hour")
     containerNumber.append(inputNumber,highlightNumber,barNumber,labelNumber)
+
     const containerExtra=document.createElement("div")
      containerExtra.classList.add("group")
      const inputExtra=document.createElement("input")
      inputExtra.type="number"
      inputExtra.classList.add("input")
+     inputExtra.id="extra"
+     inputExtra.value=0
      const highlightExtra=document.createElement("span")
      highlightExtra.classList.add("highlight")
      const barExtra=document.createElement("span")

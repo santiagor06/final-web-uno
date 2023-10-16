@@ -266,20 +266,7 @@ input[type=number]::-webkit-outer-spin-button {
     opacity: 0.5;
    }
    
-   .input:focus ~ .highlight {
-    animation: inputHighlighter 0.3s ease;
-   }
-   
-   @keyframes inputHighlighter {
-    from {
-     background: var(--white);
-    }
-   
-    to {
-     width: 0;
-     background: transparent;
-    }
-   }
+
    @media (min-width:450px){
     #container-empleados{
         grid-template-columns: repeat(auto-fill,200px) 
