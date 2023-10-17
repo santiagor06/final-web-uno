@@ -3,12 +3,12 @@ import { setModal } from "./setModal.js";
 import { volverMayuscula } from "./volverMayuscula.js";
 
 export const mostrarDetalleEmpleado = (empleado) => {
-    setModal();
-
-    const container = document.querySelector("#container-dialog");
-    while (container.firstChild) {
-        container.removeChild(container.firstChild);
-    }
+    setModal()
+     const prueba=document.createElement("h1")
+     prueba.append("DETAIL")
+     const container=document.querySelector("#container-dialog")
+     container.replaceChild(prueba,container.firstChild)
+  
 
     const detalleContainer = document.createElement("div");
     detalleContainer.classList.add("detalle-container");

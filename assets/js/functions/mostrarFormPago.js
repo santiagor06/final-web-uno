@@ -1,3 +1,4 @@
+import { agregarSalario } from "./agregarSalario.js";
 import { calcularSalario } from "./calcularSalario.js";
 import { setModal } from "./setModal.js"
 import { volverMayuscula } from "./volverMayuscula.js";
@@ -5,9 +6,7 @@ import { volverMayuscula } from "./volverMayuscula.js";
 const container=document.querySelector("#container-dialog")
 export const mostrarFormPago=(empleado)=>{
     setModal()
-     const hijo=container.firstChild;
-    if(hijo)container.removeChild(hijo)
-    crearFormPago(empleado)
+    container.replaceChild(crearFormPago(empleado),container.firstChild)
    
 }
 
@@ -115,8 +114,9 @@ const crearFormPago=(empleado)=>{
     const button=document.createElement("button")
     button.id="button-pay"
     button.append("PAY")
+    button.addEventListener("click",()=>agregarSalario(empleado))
     form.append(title,name,containerValue,containerNumber,containerExtra,containerCheckout,button)
-    container.append(form)
+  return form
 
 
 }
