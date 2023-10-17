@@ -15,7 +15,7 @@
 body{
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--primary-color);
+    background-color: var(--black);
 }
 h1{
     color: var(--yellow);
@@ -36,7 +36,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 254px;
     background: var(--black);
     border-radius: 15px;
-    box-shadow: 1px 5px 60px 0px #a2a2ae6b;
+    box-shadow: 1px 5px 60px 0px #3636396b;
    }
    
    .card .card-border-top {
@@ -105,7 +105,7 @@ input[type=number]::-webkit-outer-spin-button {
    header{
     background-color: var(--black);
     padding: 4px;
-    margin-bottom: 16px;
+    
     display: flex;
     justify-content: center;
    }
@@ -125,6 +125,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: grid;
     width: 100%;
     margin-top: 24px;
+    padding-top: 24px;
     justify-items: center;
     align-items: center;
     justify-content: center;
@@ -132,6 +133,10 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 24px;
     
    
+   }
+   #container-empleados{
+    
+    background-color: var(--black);
    }
    #modal{
     margin: auto;
@@ -144,6 +149,7 @@ input[type=number]::-webkit-outer-spin-button {
    
 
    }
+   
    #close{
     width: 30px;
     height: 30px;
@@ -156,7 +162,7 @@ input[type=number]::-webkit-outer-spin-button {
    #modal::backdrop{
         background-color: rgba(0, 0, 0, .55);
    }
-
+   
    #form-pay {
     display: flex;
     flex-direction: column;
@@ -300,14 +306,20 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    padding: 8px 4px 20px 4px;
-    background-color: var(--black);
-    width: 300px;
-    margin: auto;
-    border-radius:15px ;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    gap: 20px;
 
+    background-color: var(--black);
+
+
+  }
+  #container-filters{
+    padding-top: 24px;
+  }
+  #filters >h3{
+    color: var(--yellow);
+    font-family:"Bebas Neue";
+    text-align: center;
+    font-size: 90px;
   }
   #filters div:nth-child(3){
     display: flex;
@@ -315,6 +327,7 @@ input[type=number]::-webkit-outer-spin-button {
     
 
   }
+
   #filter {
     padding: 8px 16px;
     display: inline-block;
@@ -326,6 +339,10 @@ input[type=number]::-webkit-outer-spin-button {
     color: white;
     font-weight: 600;
     cursor: pointer;
+  }
+  .container-title{
+    background-color: var(--white);
+    width: 100%;
   }
   #all {
     padding: 8px 16px;
@@ -339,6 +356,9 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 600;
     cursor: pointer;
   }
+  .form-title{
+    font-size: 50px;
+   }
 
    @media (min-width:450px){
     #container-empleados>div{
@@ -352,5 +372,65 @@ input[type=number]::-webkit-outer-spin-button {
         height: 50px;
         padding: 8px;
     }
-    
+
+
+   }
+   @media (max-width:1199px) {
+    .container-form div:nth-child(2){
+        display: none;
+       }
+    .form-title{
+        display: none;
+       }
+
+   }
+   @media (min-width:1200px){
+       #form-add{
+        margin: auto;
+        background-color: var(--black);
+        padding: 24px;
+        border: nones;
+        width: 300px;
+        border-radius: 15px;
+        height: 300px;
+        max-width: 360px;
+       }
+    main{
+        display: flex;
+      }
+
+    #container-filters{
+        width: 50%;
+        margin: 0;
+       height: fit-content;
+    }
+    #container-empleados{
+        width: 50%;
+        
+    }
+    .container-form{
+        display: flex;
+        justify-content: center;
+        
+       
+        
+       }
+       .container-title h1{
+        font-size: 130px;
+       }
+       .container-form div:nth-child(2){
+        
+        background-color: var(--white);
+       
+        border: nones;
+        width: 50%;
+        height: 350px;
+       
+       }
+       .container-title{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
    }
