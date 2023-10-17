@@ -40,6 +40,7 @@ export const mostrarEmpleados=(empleados)=>{
     if(empleados.length===0){
         const any=document.createElement("h1")
         any.append("Any Employee")
+        any.style.fontSize="28px"
         container.replaceChild(any,container.firstChild)
         return
     }
