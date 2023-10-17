@@ -121,7 +121,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 600;
     cursor: pointer;
    }
-   #container-empleados{
+   #container-empleados>div{
     display: grid;
     width: 100%;
     margin-top: 24px;
@@ -265,10 +265,83 @@ input[type=number]::-webkit-outer-spin-button {
     pointer-events: none;
     opacity: 0.5;
    }
-   
+   .coolinput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 240px;
+  }
+  
+  .coolinput label.text {
+    font-size: 0.75rem;
+    color: var(--yellow);
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: var(--black);
+    width: fit-content;
+  }
+  
+  .coolinput input[type=text].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px var(--yellow) solid;
+    border-radius: 5px;
+    background: var(--black);
+  }
+  
+  .coolinput input[type=text].input:focus {
+    outline: none;
+  }
+  #filters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 16px 24px 16px;
+    
+    width: 300px;
+    margin: auto;
+    border-radius:15px ;
+  
+
+  }
+  #filters div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    
+
+  }
+  #filter {
+    padding: 8px 16px;
+    display: inline-block;
+   align-self: center;
+   width: 110px;
+    border-radius: 0 8px 8px 0px;
+    border: none;
+    background: var(--yellow);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #all {
+    padding: 8px 16px;
+    display: inline-block;
+   align-self: center;
+   width: 110px;
+    border-radius: 8px 0 0 8px;
+    border: none;
+    background: var(--yellow);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
 
    @media (min-width:450px){
-    #container-empleados{
+    #container-empleados>div{
         grid-template-columns: repeat(auto-fill,200px) 
     }
     header{
