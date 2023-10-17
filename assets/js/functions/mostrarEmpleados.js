@@ -1,14 +1,10 @@
 import { mostrarDetalleEmpleado } from "./mostrarDetalleEmpleado.js";
 import { mostrarFormPago } from "./mostrarFormPago.js";
 import { volverMayuscula } from "./volverMayuscula.js";
-const modal=document.querySelector("#modal")
-const showModal=()=>{
-    const close=document.querySelector("#close")
-    modal.showModal()
-    close.addEventListener("click",()=>modal.close())
 
-}
+
 const crearCardEmpleado=(empleados)=>{
+    
     const cards=[]
 empleados.forEach(empleado => {
     const card=document.createElement("div")
@@ -42,7 +38,17 @@ return cards;
 
 export const mostrarEmpleados=(empleados)=>{
     const container=document.querySelector("#container-empleados")
+    if(empleados.length===0){
+        const any=document.createElement("h1")
+        any.append("Any Employee")
+        any.style.fontSize="28px"
+        any.style.textAlign="center"
+        any.style.marginTop="50px"
+        container.replaceChild(any,container.firstChild)
+        return
+    }
+    const containerCards=document.createElement("div")
     const cards=crearCardEmpleado(empleados)
-  
-    container.append(...cards)
+    containerCards.append(...cards)
+    container.replaceChild(containerCards,container.firstChild);
 }
