@@ -314,7 +314,9 @@ input[type=number]::-webkit-outer-spin-button {
 
   }
   #container-filters{
-    padding-top: 24px;
+    width: 50%;
+    margin: auto;
+
   }
   #filters >h3{
     color: var(--yellow);
@@ -400,11 +402,7 @@ header img{
         display: flex;
       }
 
-    #container-filters{
-        width: 50%;
-        margin: 0;
-       height: fit-content;
-    }
+
     #container-empleados{
         width: 50%;
         
