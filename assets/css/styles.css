@@ -315,6 +315,9 @@ input[type=number]::-webkit-outer-spin-button {
   }
   #container-filters{
     padding-top: 24px;
+    width: 50%;
+    margin: auto;
+
   }
   #filters >h3{
     color: var(--yellow);
@@ -396,17 +399,16 @@ header img{
     #button-add-employee{
         display: none;
     }
+    #modal{
+      width: 500px;
+    }
     main{
         display: flex;
       }
 
-    #container-filters{
-        width: 50%;
-        margin: 0;
-       height: fit-content;
-    }
+
     #container-empleados{
-        width: 50%;
+        width: 70%;
         
     }
     .container-form{
