@@ -21,7 +21,7 @@ empleados.forEach(empleado => {
     jobTitle.classList.add("job")
     jobTitle.append(volverMayuscula(empleado.cargo))
     const detail=document.createElement("button")
-    detail.addEventListener("click",()=>mostrarDetalleEmpleado())
+    detail.addEventListener("click",()=>mostrarDetalleEmpleado(empleado))
     detail.append("Detail")
     const pay=document.createElement("button")
     pay.addEventListener("click",()=>mostrarFormPago(empleado))
