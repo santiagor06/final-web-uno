@@ -405,9 +405,11 @@ header img{
     #button-add-employee{
         display: none;
     }
+
     #modal{
       width: 500px;
     }
+
     main{
         display: flex;
       }
