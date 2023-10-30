@@ -54,9 +54,7 @@ export const empleados=[
     fechaIngreso: "2023-01-01",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBEwvFP3FV1ou1fbGozZKWSXcj85YBnIL5m_sibjfkuZQm-cl5RzkmOz8EQELJYbEBFWo&usqp=CAU",
     historialSalarios: [
-        {cantidad: 30000, fecha: "2023-01-01"},
-        {cantidad: 35000, fecha: "2023-02-01"},
-        {cantidad: 38000, fecha: "2023-03-01"}
+ 
     ]
 }
 ];
