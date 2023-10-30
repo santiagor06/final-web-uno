@@ -16,7 +16,7 @@
 <body>
     <header>
         <img src="./assets/img/icon.png" height="40" width="110" alt="icon">
-        <button>Add Employee</button>
+        <button id="button-add-employee" >Add Employee</button>
     </header>
     <section class="container-form">
         <div class="container-title">
@@ -31,21 +31,24 @@
     </section>
     <main>
         <div id="container-filters">
-            <h1 class="form-title">Filters</h1>
+            <div>
 
-            <div id="filters">
-                <div class="coolinput">
-                    <label for="input"  class="text">Name:</label>
-                    <input type="text" id="filter-name" placeholder="Write here..." name="input" class="input">
-                </div>
-                <div class="coolinput">
-                    <label for="input"  class="text">Job Title:</label>
-                    <input type="text" id="filter-job" placeholder="Write here..." name="input" class="input">
-                </div>
-                <div>
-            
-                    <button id="all">All</button>
-                    <button id="filter">Filter</button>
+                <h1 class="form-title">Filters</h1>
+    
+                <div id="filters">
+                    <div class="coolinput">
+                        <label for="input"  class="text">Name:</label>
+                        <input type="text" id="filter-name" placeholder="Write here..." name="input" class="input">
+                    </div>
+                    <div class="coolinput">
+                        <label for="input"  class="text">Job Title:</label>
+                        <input type="text" id="filter-job" placeholder="Write here..." name="input" class="input">
+                    </div>
+                    <div>
+                
+                        <button id="all">All</button>
+                        <button id="filter">Filter</button>
+                    </div>
                 </div>
             </div>
         </div>

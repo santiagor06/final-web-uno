@@ -36,7 +36,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 254px;
     background: var(--black);
     border-radius: 15px;
-    box-shadow: 1px 5px 60px 0px #3636396b;
+    box-shadow: 1px 5px 60px 0px #2d2d2e98;
    }
    
    .card .card-border-top {
@@ -107,7 +107,8 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 4px;
     
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
    }
    #button-pay{
     padding: 8px 16px;
@@ -314,6 +315,9 @@ input[type=number]::-webkit-outer-spin-button {
   }
   #container-filters{
     padding-top: 24px;
+    width: 50%;
+    margin: auto;
+
   }
   #filters >h3{
     color: var(--yellow);
@@ -327,7 +331,16 @@ input[type=number]::-webkit-outer-spin-button {
     
 
   }
-
+#button-add-employee{
+    padding: 12px 12px;
+    border-radius: 8px;
+    height: fit-content;
+    border: none;
+    background: var(--yellow);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
   #filter {
     padding: 8px 16px;
     display: inline-block;
@@ -370,17 +383,15 @@ input[type=number]::-webkit-outer-spin-button {
     #container-empleados>div{
         grid-template-columns: repeat(auto-fill,200px) 
     }
-    header{
-        display: block;
-    }
-    header img{
-        width: 150px;
-        height: 50px;
-        padding: 8px;
-    }
 
+    
+}
 
-   }
+header img{
+    width: 150px;
+    height: 50px;
+    padding: 8px;
+}
    @media (max-width:1199px) {
     .container-form div:nth-child(2){
         display: none;
@@ -391,27 +402,19 @@ input[type=number]::-webkit-outer-spin-button {
 
    }
    @media (min-width:1200px){
-       #form-add{
-        margin: auto;
-        background-color: var(--black);
-        padding: 24px;
-        border: nones;
-        width: 300px;
-        border-radius: 15px;
-        height: 300px;
-        max-width: 360px;
-       }
+    #button-add-employee{
+        display: none;
+    }
+    #modal{
+      width: 500px;
+    }
     main{
         display: flex;
       }
 
-    #container-filters{
-        width: 50%;
-        margin: 0;
-       height: fit-content;
-    }
+
     #container-empleados{
-        width: 50%;
+        width: 70%;
         
     }
     .container-form{
