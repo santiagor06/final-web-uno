@@ -373,6 +373,12 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 50px;
    }
 
+   li {
+    padding: 12px;
+    line-height: 1.5;
+    text-align: center;
+   }
+
    @media (min-width:450px){
     #container-empleados>div{
         grid-template-columns: repeat(auto-fill,200px) 
@@ -399,9 +405,11 @@ header img{
     #button-add-employee{
         display: none;
     }
+
     #modal{
       width: 500px;
     }
+
     main{
         display: flex;
       }
