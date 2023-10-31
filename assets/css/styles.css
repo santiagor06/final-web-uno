@@ -150,7 +150,8 @@ input[type=number]::-webkit-outer-spin-button {
    
 
    }
-   
+
+  
    #close{
     width: 30px;
     height: 30px;
@@ -187,6 +188,10 @@ input[type=number]::-webkit-outer-spin-button {
    .checkout p:nth-child(2){
    
     font-weight: 300;
+   }
+   #container-dialog{
+    display: flex;
+    justify-content: center;
    }
    .total{
     display: flex;
@@ -378,6 +383,10 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 1.5;
     text-align: center;
    }
+   .error{
+    color: rgb(187, 44, 44);
+  }
+  
 
    @media (min-width:450px){
     #container-empleados>div{
