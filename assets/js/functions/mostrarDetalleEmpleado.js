@@ -107,11 +107,8 @@ empleado.historialSalarios.forEach((pago) => {
     cantidadValueElement.style.color = "var(--white)";
 
     // Agregar los elementos a la lista
-    pagoItem.appendChild(fechaItem);
-    pagoItem.appendChild(fechaValueElement);
-    pagoItem.appendChild(document.createElement("br")); // Agregar un salto de línea
-    pagoItem.appendChild(cantidadItem);
-    pagoItem.appendChild(cantidadValueElement);
+    pagoItem.append(fechaItem,fechaValueElement,document.createElement("br"),cantidadItem,cantidadValueElement);
+
 
     historialPagos.appendChild(pagoItem);
 });
@@ -121,15 +118,7 @@ empleado.historialSalarios.forEach((pago) => {
 
     
 
-    detalleContainer.appendChild(titulo);
-    detalleContainer.appendChild(espacio1);
-    detalleContainer.appendChild(imagenEmpleado);
-    detalleContainer.appendChild(espacio2);
-    detalleContainer.appendChild(cargo);
-    detalleContainer.appendChild(espacio3);
-    detalleContainer.appendChild(historialContainer);
-    detalleContainer.appendChild(espacio4);
-    detalleContainer.appendChild(historialPagos);
+    detalleContainer.append(titulo,espacio1,imagenEmpleado,espacio2,cargo,espacio3,historialContainer,espacio4,historialPagos);
 
     container.appendChild(detalleContainer);
 };
