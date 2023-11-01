@@ -24,7 +24,7 @@ export const mostrarDetalleEmpleado = (empleado) => {
     titulo.style.textAlign = "center";
     titulo.style.color = "var(--yellow)";
     titulo.style.textTransform = "uppercase"; // Convertir a mayúsculas
-    titulo.textContent = `${volverMayuscula(empleado.nombre)} ${volverMayuscula(empleado.apellido)}`;
+    titulo.textContent = empleado.nombreCompleto;
     titulo.style.marginBottom = "20px";
 
     // Espacio entre el título y la foto
@@ -103,7 +103,7 @@ empleado.historialSalarios.forEach((pago) => {
     
 
     const cantidadValueElement = document.createElement("span");
-    cantidadValueElement.textContent = `$${pago.cantidad}`;
+    cantidadValueElement.textContent = pago.cantidad;
     cantidadValueElement.style.color = "var(--white)";
 
     // Agregar los elementos a la lista
