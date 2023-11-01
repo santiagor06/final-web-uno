@@ -129,7 +129,7 @@ input[type=number]::-webkit-outer-spin-button {
    #container-empleados>div{
     display: grid;
     width: 100%;
-    margin-top: 24px;
+    margin-top: 50px;
     padding-top: 24px;
     justify-items: center;
     align-items: center;
@@ -154,7 +154,8 @@ input[type=number]::-webkit-outer-spin-button {
    
 
    }
-   
+
+  
    #close{
     width: 30px;
     height: 30px;
@@ -191,6 +192,10 @@ input[type=number]::-webkit-outer-spin-button {
    .checkout p:nth-child(2){
    
     font-weight: 300;
+   }
+   #container-dialog{
+    display: flex;
+    justify-content: center;
    }
    .total{
     display: flex;
@@ -336,7 +341,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   }
 #button-add-employee{
-    padding: 12px 12px;
+    padding: 8px 8px;
     border-radius: 8px;
     height: fit-content;
     border: none;
@@ -382,6 +387,10 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 1.5;
     text-align: center;
    }
+   .error{
+    color: rgb(187, 44, 44);
+  }
+  
 
    @media (min-width:450px){
     #container-empleados>div{
@@ -409,11 +418,14 @@ header img{
     #button-add-employee{
         display: none;
     }
+
     #modal{
       width: 500px;
     }
+
     main{
         display: flex;
+        height: 100vh;
       }
 
 
@@ -424,6 +436,7 @@ header img{
     .container-form{
         display: flex;
         justify-content: center;
+        height: 100vh;
         
        
         
@@ -437,7 +450,7 @@ header img{
        
         border: nones;
         width: 50%;
-        height: 350px;
+       
        
        }
        .container-title{
