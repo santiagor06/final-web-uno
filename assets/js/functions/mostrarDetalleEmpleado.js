@@ -8,18 +8,18 @@ export const mostrarDetalleEmpleado = (empleado) => {
     const child = container.firstChild;
     if (child) container.removeChild(child);
 
-    //  elementos para mostrar la información del empleado
+    // Elementos para mostrar la información del empleado
     const detalleContainer = document.createElement("div");
     detalleContainer.style.backgroundColor = "var(--black)";
     detalleContainer.style.color = "var(--white)";
     detalleContainer.style.padding = "24px";
     detalleContainer.style.borderRadius = "15px";
-    detalleContainer.style.width = "250px";
-    detalleContainer.style.height = "450px";
+    detalleContainer.style.width = "350px"; // Aumenta el ancho de la ventana
+    detalleContainer.style.height = "500px"; // Aumenta la altura de la ventana
     detalleContainer.style.display = "flex";
     detalleContainer.style.flexDirection = "column";
 
-    // Título 
+    // Título
     const titulo = document.createElement("h2");
     titulo.style.textAlign = "center";
     titulo.style.color = "var(--yellow)";
@@ -34,42 +34,65 @@ export const mostrarDetalleEmpleado = (empleado) => {
     // Imagen del empleado
     const imagenEmpleado = document.createElement("img");
     imagenEmpleado.src = empleado.imagen;
-    imagenEmpleado.style.width = "140px"; // Ajusta el tamaño de la imagen 
-    imagenEmpleado.style.height = "200px"; // Ajusta el tamaño de la imagen 
+    imagenEmpleado.style.width = "140px";
+    imagenEmpleado.style.height = "200px";
     imagenEmpleado.style.display = "block";
     imagenEmpleado.style.marginLeft = "auto";
     imagenEmpleado.style.marginRight = "auto";
     imagenEmpleado.style.borderRadius = "15px";
-    imagenEmpleado.style.objectFit="cover"
+    imagenEmpleado.style.objectFit = "cover";
 
     // Espacio entre la foto y el título del cargo
     const espacio2 = document.createElement("div");
-    espacio2.style.height = "30px";
+    espacio2.style.height = "20px";
 
     // Cargo del empleado
     const cargo = document.createElement("p");
-
-    // Crear un elemento span para el título "Cargo: "
     const tituloCargo = document.createElement("span");
     tituloCargo.textContent = "Job Title: ";
-    tituloCargo.style.color = "var(--yellow)"; // Establecer color amarillo
-
-    // Crear un elemento span para el valor del cargo
+    tituloCargo.style.color = "var(--yellow)";
     const valorCargo = document.createElement("span");
     valorCargo.textContent = empleado.cargo;
-    valorCargo.style.color = "var(--white)"; // Establecer color blanco
-
-    // Agregar los elementos span al elemento p (cargo)
+    valorCargo.style.color = "var(--white)";
     cargo.appendChild(tituloCargo);
     cargo.appendChild(valorCargo);
-
-    // Establecer la alineación del texto en el centro
     cargo.style.textAlign = "center";
 
-
-    // Espacio entre el cargo y el título "Historial de Pagos"
+    // Espacio entre el cargo y el correo electrónico
     const espacio3 = document.createElement("div");
     espacio3.style.height = "20px";
+
+    // Correo electrónico del empleado
+    const email = document.createElement("p");
+    const tituloEmail = document.createElement("span");
+    tituloEmail.textContent = "Email: ";
+    tituloEmail.style.color = "var(--yellow)";
+    const valorEmail = document.createElement("span");
+    valorEmail.textContent = empleado.email;
+    valorEmail.style.color = "var(--white)";
+    email.appendChild(tituloEmail);
+    email.appendChild(valorEmail);
+    email.style.textAlign = "center";
+
+    // Espacio entre el correo electrónico y la fecha de ingreso
+    const espacio4 = document.createElement("div");
+    espacio4.style.height = "20px";
+
+    // Fecha de ingreso
+    const fechaIngreso = document.createElement("p");
+    const tituloFechaIngreso = document.createElement("span");
+    tituloFechaIngreso.textContent = "Date of Entry: ";
+    tituloFechaIngreso.style.color = "var(--yellow)";
+    const valorFechaIngreso = document.createElement("span");
+    valorFechaIngreso.textContent = empleado.fechaIngreso;
+    valorFechaIngreso.style.color = "var(--white)";
+    fechaIngreso.appendChild(tituloFechaIngreso);
+    fechaIngreso.appendChild(valorFechaIngreso);
+    fechaIngreso.style.textAlign = "center";
+
+    // Espacio entre la fecha de ingreso y el título "Historial de Pagos"
+    const espacio5 = document.createElement("div");
+    espacio5.style.height = "20px";
 
     // Historial de pagos
     const historialContainer = document.createElement("div");
@@ -79,12 +102,11 @@ export const mostrarDetalleEmpleado = (empleado) => {
     historialContainer.appendChild(historialTitulo);
 
     // Espacio entre el título "Historial de Pagos" y el historial.
-    const espacio4 = document.createElement("div");
-    espacio4.style.height = "20px";
+    const espacio6 = document.createElement("div");
+    espacio6.style.height = "20px";
 
-    
     const historialPagos = document.createElement("ul");
-historialPagos.classList.add("historial-pagos");
+    historialPagos.classList.add("historial-pagos");
 
 empleado.historialSalarios.forEach((pago) => {
     const pagoItem = document.createElement("li");
@@ -113,12 +135,21 @@ empleado.historialSalarios.forEach((pago) => {
     historialPagos.appendChild(pagoItem);
 });
 
-// Añadir la lista de historialPagos al contenedor
-
-
-    
-
-    detalleContainer.append(titulo,espacio1,imagenEmpleado,espacio2,cargo,espacio3,historialContainer,espacio4,historialPagos);
+    detalleContainer.append(
+        titulo,
+        espacio1,
+        imagenEmpleado,
+        espacio2,
+        cargo,
+        espacio3,
+        email,
+        espacio4,
+        fechaIngreso,
+        espacio5,
+        historialContainer,
+        espacio6,
+        historialPagos
+    );
 
     container.appendChild(detalleContainer);
 };
