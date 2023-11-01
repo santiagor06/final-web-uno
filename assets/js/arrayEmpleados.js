@@ -2,6 +2,7 @@ export const empleados=[
     {
     nombre: "Juan",
     apellido: "Pérez",
+    email: "juan@cesde.com",
     cargo: "Desarrollador Senior",
     fechaIngreso: "2023-01-01",
     imagen: "https://photoprint.com.co/wp-content/uploads/2020/05/visa-americana9_217x150.jpg",
@@ -14,6 +15,7 @@ export const empleados=[
     {
     nombre: "Rodrigo",
     apellido: "Hernandez",
+    email: "rodrigo@cesde.com",
     cargo: "Desarrollador Junior",
     fechaIngreso: "2023-01-01",
     imagen: "https://photoprint.com.co/wp-content/uploads/2020/05/pasaporte-alemana8_217x150.jpg",
@@ -26,6 +28,7 @@ export const empleados=[
     {
     nombre: "Matias",
     apellido: "Rojas",
+    email: "matias@cesde.com",
     cargo: "Administrador",
     fechaIngreso: "2023-01-01",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBEwvFP3FV1ou1fbGozZKWSXcj85YBnIL5m_sibjfkuZQm-cl5RzkmOz8EQELJYbEBFWo&usqp=CAU",
@@ -38,6 +41,7 @@ export const empleados=[
     {
     nombre: "Daniela",
     apellido: "Ruiz",
+    email: "daniela@cesde.com",
     cargo: "Desarrollador Senior",
     fechaIngreso: "2023-01-01",
     imagen: "https://img.freepik.com/fotos-premium/sonriente-joven-empresaria-empresaria-camisa-blanca-brazos-cruzados-pecho-como-profesional-pie-sobre-fondo-estudio_1258-87934.jpg?size=626&ext=jpg",
@@ -49,6 +53,7 @@ export const empleados=[
     {
     nombre: "Maria",
     apellido: "Perez",
+    email: "maria@cesde.com",
     cargo: "Diseñador",
     fechaIngreso: "2023-01-01",
     imagen: "https://media.istockphoto.com/id/1194830528/es/v%C3%ADdeo/retrato-de-mujer-africana-sonriente.jpg?s=640x640&k=20&c=-zQf6awJJ-yHRSBKJFnppHfkdTA2a50E642OSDTumW8=",
@@ -61,6 +66,7 @@ export const empleados=[
     {
     nombre: "Juan",
     apellido: "Pérez",
+    email: "juan@cesde.com",
     cargo: "Desarrollador Senior",
     fechaIngreso: "2023-01-01",
     imagen: "https://photoprint.com.co/wp-content/uploads/2020/05/visa-americana9_217x150.jpg",
@@ -73,6 +79,7 @@ export const empleados=[
     {
     nombre: "Rodrigo",
     apellido: "Hernandez",
+    email: "rodrigo@cesde.com",
     cargo: "Desarrollador Junior",
     fechaIngreso: "2023-01-01",
     imagen: "https://photoprint.com.co/wp-content/uploads/2020/05/pasaporte-alemana8_217x150.jpg",
@@ -85,6 +92,7 @@ export const empleados=[
     {
     nombre: "Matias",
     apellido: "Rojas",
+    email: "matias@cesde.com",
     cargo: "Administrador",
     fechaIngreso: "2023-01-01",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBEwvFP3FV1ou1fbGozZKWSXcj85YBnIL5m_sibjfkuZQm-cl5RzkmOz8EQELJYbEBFWo&usqp=CAU",
@@ -97,6 +105,7 @@ export const empleados=[
     {
     nombre: "Daniela",
     apellido: "Ruiz",
+    email: "daniela@cesde.com",
     cargo: "Desarrollador Senior",
     fechaIngreso: "2023-01-01",
     imagen: "https://img.freepik.com/fotos-premium/sonriente-joven-empresaria-empresaria-camisa-blanca-brazos-cruzados-pecho-como-profesional-pie-sobre-fondo-estudio_1258-87934.jpg?size=626&ext=jpg",
@@ -108,6 +117,7 @@ export const empleados=[
     {
     nombre: "Maria",
     apellido: "Perez",
+    email: "maria@cesde.com",
     cargo: "Diseñador",
     fechaIngreso: "2023-01-01",
     imagen: "https://media.istockphoto.com/id/1194830528/es/v%C3%ADdeo/retrato-de-mujer-africana-sonriente.jpg?s=640x640&k=20&c=-zQf6awJJ-yHRSBKJFnppHfkdTA2a50E642OSDTumW8=",
