@@ -17,7 +17,7 @@ empleados.forEach(empleado => {
     image.src=empleado.imagen
     cardImage.append(image)
     const span=document.createElement("span")
-    span.append(`${volverMayuscula (empleado.nombre)} ${volverMayuscula(empleado.apellido)}`)
+    span.append(empleado.nombreCompleto)
     const jobTitle=document.createElement("p")
     jobTitle.classList.add("job")
     jobTitle.append(volverMayuscula(empleado.cargo))
