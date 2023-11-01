@@ -5,7 +5,7 @@ import { volverMayuscula } from "./volverMayuscula.js";
 
 const crearCardEmpleado=(empleados)=>{
     
-    const cards=[]
+const cards=[]
 empleados.forEach(empleado => {
     const card=document.createElement("div")
     card.classList.add("card")
