@@ -68,7 +68,7 @@ export const mostrarDetalleEmpleado = (empleado) => {
     tituloEmail.textContent = "Email: ";
     tituloEmail.style.color = "var(--yellow)";
     const valorEmail = document.createElement("span");
-    valorEmail.textContent = empleado.email;
+    valorEmail.textContent = empleado.correo;
     valorEmail.style.color = "var(--white)";
     email.appendChild(tituloEmail);
     email.appendChild(valorEmail);
