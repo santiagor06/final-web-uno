@@ -40,6 +40,7 @@ export const mostrarDetalleEmpleado = (empleado) => {
     imagenEmpleado.style.marginLeft = "auto";
     imagenEmpleado.style.marginRight = "auto";
     imagenEmpleado.style.borderRadius = "15px";
+    imagenEmpleado.style.objectFit="cover"
 
     // Espacio entre la foto y el título del cargo
     const espacio2 = document.createElement("div");
@@ -50,7 +51,7 @@ export const mostrarDetalleEmpleado = (empleado) => {
 
     // Crear un elemento span para el título "Cargo: "
     const tituloCargo = document.createElement("span");
-    tituloCargo.textContent = "Cargo: ";
+    tituloCargo.textContent = "Job Title: ";
     tituloCargo.style.color = "var(--yellow)"; // Establecer color amarillo
 
     // Crear un elemento span para el valor del cargo
@@ -73,7 +74,7 @@ export const mostrarDetalleEmpleado = (empleado) => {
     // Historial de pagos
     const historialContainer = document.createElement("div");
     const historialTitulo = document.createElement("h3");
-    historialTitulo.textContent = "Historial de Pagos";
+    historialTitulo.textContent = "Payment History";
     historialTitulo.style.textAlign = "center";
     historialContainer.appendChild(historialTitulo);
 
@@ -90,11 +91,11 @@ empleado.historialSalarios.forEach((pago) => {
 
     const fechaItem = document.createElement("span");
     fechaItem.style.color = "var(--yellow)";
-    fechaItem.innerHTML = "Fecha: ";
+    fechaItem.innerHTML = "Date: ";
 
     const cantidadItem = document.createElement("span");
     cantidadItem.style.color = "var(--yellow)";
-    cantidadItem.innerHTML = "Cantidad: ";
+    cantidadItem.innerHTML = "Amount: ";
 
     const fechaValueElement = document.createElement("span");
     fechaValueElement.textContent = pago.fecha;
@@ -106,11 +107,8 @@ empleado.historialSalarios.forEach((pago) => {
     cantidadValueElement.style.color = "var(--white)";
 
     // Agregar los elementos a la lista
-    pagoItem.appendChild(fechaItem);
-    pagoItem.appendChild(fechaValueElement);
-    pagoItem.appendChild(document.createElement("br")); // Agregar un salto de línea
-    pagoItem.appendChild(cantidadItem);
-    pagoItem.appendChild(cantidadValueElement);
+    pagoItem.append(fechaItem,fechaValueElement,document.createElement("br"),cantidadItem,cantidadValueElement);
+
 
     historialPagos.appendChild(pagoItem);
 });
@@ -120,15 +118,7 @@ empleado.historialSalarios.forEach((pago) => {
 
     
 
-    detalleContainer.appendChild(titulo);
-    detalleContainer.appendChild(espacio1);
-    detalleContainer.appendChild(imagenEmpleado);
-    detalleContainer.appendChild(espacio2);
-    detalleContainer.appendChild(cargo);
-    detalleContainer.appendChild(espacio3);
-    detalleContainer.appendChild(historialContainer);
-    detalleContainer.appendChild(espacio4);
-    detalleContainer.appendChild(historialPagos);
+    detalleContainer.append(titulo,espacio1,imagenEmpleado,espacio2,cargo,espacio3,historialContainer,espacio4,historialPagos);
 
     container.appendChild(detalleContainer);
 };
