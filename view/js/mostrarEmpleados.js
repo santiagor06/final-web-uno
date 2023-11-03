@@ -1,6 +1,6 @@
 import { mostrarDetalleEmpleado } from "./mostrarDetalleEmpleado.js";
 import { mostrarFormPago } from "./mostrarFormPago.js";
-import { volverMayuscula } from "./volverMayuscula.js";
+import { volverMayuscula } from "../../controller/volverMayuscula.js";
 
 
 const crearCardEmpleado=(empleados)=>{

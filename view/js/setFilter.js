@@ -1,4 +1,4 @@
-import { empleados } from "../arrayEmpleados.js"
+import { empleados } from "../../model/DB.js"
 import { mostrarEmpleados } from "./mostrarEmpleados.js"
 
 export const setFilter=()=>{

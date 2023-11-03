@@ -1,5 +1,5 @@
-import { Empleado } from "./models/Empleados.js";
-import { Salario } from "./models/Salario.js";
+import { Empleado } from "./Empleados.js";
+import { Salario } from "./Salario.js";
 
 export const empleados=[
     new Empleado("Juan","Perez","Desarrollador Senior","https://photoprint.com.co/wp-content/uploads/2020/05/visa-americana9_217x150.jpg","Juan@email.com"),

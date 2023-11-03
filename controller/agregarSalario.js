@@ -1,6 +1,6 @@
-import { empleados } from "../arrayEmpleados.js"
-import { Salario } from "../models/Salario.js"
-import { mostrarEmpleados } from "./mostrarEmpleados.js"
+
+import { Salario } from "../model/Salario.js"
+
 
 export const agregarSalario=(empleado)=>{
     const total=document.querySelector("#total-salary")

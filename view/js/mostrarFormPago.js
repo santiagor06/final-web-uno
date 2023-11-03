@@ -1,7 +1,7 @@
-import { agregarSalario } from "./agregarSalario.js";
-import { calcularSalario } from "./calcularSalario.js";
+import { agregarSalario } from "../../controller/agregarSalario.js";
+import { calcularSalario } from "../../controller/calcularSalario.js";
 import { setModal } from "./setModal.js"
-import { volverMayuscula } from "./volverMayuscula.js";
+import { volverMayuscula } from "../../controller/volverMayuscula.js";
 
 const container=document.querySelector("#container-dialog")
 export const mostrarFormPago=(empleado)=>{

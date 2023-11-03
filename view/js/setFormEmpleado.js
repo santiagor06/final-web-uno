@@ -1,4 +1,4 @@
-import { agregarEmpleado } from "./agregarEmpleado.js"
+import { agregarEmpleado } from "../../controller/agregarEmpleado.js"
 
 export function setFormEmpleado(){
     let btnIniciar= document.querySelector("#btnIniciar")

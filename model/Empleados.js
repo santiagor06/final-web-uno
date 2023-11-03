@@ -1,4 +1,4 @@
-import { volverMayuscula } from "../functions/volverMayuscula.js";
+import { volverMayuscula } from "../controller/volverMayuscula.js";
 import { Salario } from "./Salario.js";
 
 export class Empleado{

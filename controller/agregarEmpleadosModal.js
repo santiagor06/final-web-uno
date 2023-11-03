@@ -1,6 +1,6 @@
-import { empleados } from "../arrayEmpleados.js";
-import { Empleado } from "../models/Empleados.js";
-import { mostrarEmpleados } from "./mostrarEmpleados.js";
+import { empleados } from "../model/DB.js";
+import { Empleado } from "../model/Empleados.js";
+import { mostrarEmpleados } from "../view/js/mostrarEmpleados.js";
 
 empleados
 

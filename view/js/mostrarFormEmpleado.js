@@ -1,6 +1,6 @@
-import { agregarEmpleadoModal } from "./agregarEmpleadosModal.js"
+import { agregarEmpleadoModal } from "../../controller/agregarEmpleadosModal.js"
 import { setModal } from "./setModal.js"
-import { validarCampos } from "./validarCampos.js"
+import { validarCampos } from "../../controller/validarCampos.js"
 
  const mostrarFormEmpleado=()=>{
     setModal()
@@ -59,7 +59,7 @@ import { validarCampos } from "./validarCampos.js"
     
 
 }
-export const setFormEmployee=()=>{
+export const setButtonFormEmployee=()=>{
     const button=document.querySelector("#button-add-employee")
     button.addEventListener("click",()=>mostrarFormEmpleado())
 
