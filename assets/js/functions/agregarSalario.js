@@ -1,4 +1,5 @@
 import { empleados } from "../arrayEmpleados.js"
+import { Salario } from "../models/Salario.js"
 import { mostrarEmpleados } from "./mostrarEmpleados.js"
 
 export const agregarSalario=(empleado)=>{
@@ -6,11 +7,8 @@ export const agregarSalario=(empleado)=>{
 const totalValueString=total.innerHTML
 const totalValue=+totalValueString.split("$")[1];
 
-const fechaActual=new Date().toLocaleDateString()
-const salary={
-    cantidad: totalValue, 
-    fecha: fechaActual
-}
-empleado.historialSalarios.push(salary)
+const salary=new Salario()
+salary.cantidad=totalValue;
+empleado.añadirSalario(salary)
 
 }
