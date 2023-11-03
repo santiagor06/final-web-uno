@@ -497,20 +497,21 @@ header img{
     font-size: 14px;
     font-weight: bold;
     color: white;
-    outline: none;
-    border-radius: 50px;
+    outline: none;    
   }
   
   .buttons {
     width: 95%;
     height: 40px;
     background: #ebc42a;
+    border-radius: 8px;
     border: none;
     color: white;
+    font-weight: 600;
     margin-bottom: 16px;
     cursor: pointer;
     transition: ease-in-out 0.5s;
-    border-radius: 50px;
+    border-radius: 10px;
   }
   
   .buttons:hover {

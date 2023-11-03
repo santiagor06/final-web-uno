@@ -110,6 +110,7 @@ export const mostrarDetalleEmpleado = (empleado) => {
 
 empleado.historialSalarios.forEach((pago) => {
     const pagoItem = document.createElement("li");
+    pagoItem.style.listStyle = "none";
 
     const fechaItem = document.createElement("span");
     fechaItem.style.color = "var(--yellow)";

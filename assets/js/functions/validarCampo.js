@@ -1,7 +1,8 @@
+
 let nombre = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
 let apellido = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
 let cargo = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
-
+let correo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 
 let inputs = document.querySelectorAll("input");
@@ -46,5 +47,20 @@ inputs.forEach((input) => {
           document.getElementById("cargo").classList.remove("correcto");
         }
         break;
+        
+        case "correo":
+          if (correo.test(e.target.value)) {
+            console.log("Cumple con la expresion");
+            
+            document.getElementById("correo").classList.add("correcto");
+            document.getElementById("correo").classList.remove("incorrecto");
+          } else {
+            console.log("No cumple con la expresion");
+            
+            document.getElementById("correo").classList.add("incorrecto");
+            document.getElementById("correo").classList.remove("correcto");
+          }
+          break;
+      }
+      
     }
-  }
