@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickPay</title>
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png"/>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,58 +17,26 @@
 <body>
     <header>
         <img src="./assets/img/icon.png" height="40" width="110" alt="icon">
-        <button id="button-add-employee" >Add Employee</button>
+        <button id="button-add-employee">Add Employee</button>
     </header>
     <section class="container-form">
         <div class="container-title">
             <h1>THE BEST WAY TO PAY</h1>
-            
+
         </div>
         <div class="container-rigth">
             <form action="" id="form" class="form-login">
                 <h1 class="form-title">Add employee</h1>
-     
-      <input
-        class="controls"
-        type="text"
-        placeholder="Nombre"
-        id="nombre"
-        name="nombre"
-      />
-      <input
-        class="controls"
-        type="text"
-        placeholder="Apellido"
-        id="apellido"
-        name="apellido"
-      />
-      <input
-        class="controls"
-        type="text"
-        placeholder="Cargo"
-        id="cargo"
-        name="cargo"
-      />
-      <input
-      class="controls"
-      type="url"
-      placeholder="Url img"
-      id="urlimg"
-      name="urlimg"
-      
-    />
-    <input
-      class="controls"
-      type="correo"
-      placeholder="correo"
-      id="correo"
-      name="correo"
-      
-    />
-    
-    
-      <input id="btnIniciar" class="buttons" disabled="true" type="button" value="Registrar" />
-             
+
+                <input class="controls" type="text" placeholder="Nombre" id="nombre" name="nombre" />
+                <input class="controls" type="text" placeholder="Apellido" id="apellido" name="apellido" />
+                <input class="controls" type="text" placeholder="Cargo" id="cargo" name="cargo" />
+                <input class="controls" type="url" placeholder="Url img" id="urlimg" name="urlimg" />
+                <input class="controls" type="correo" placeholder="correo" id="correo" name="correo" />
+
+
+                <input id="btnIniciar" class="buttons" disabled="true" type="button" value="Registrar" />
+
             </form>
         </div>
     </section>
@@ -77,18 +45,18 @@
             <div>
 
                 <h1 class="form-title">Filters</h1>
-    
+
                 <div id="filters">
                     <div class="coolinput">
-                        <label for="input"  class="text">Name:</label>
+                        <label for="input" class="text">Name:</label>
                         <input type="text" id="filter-name" placeholder="Write here..." name="input" class="input">
                     </div>
                     <div class="coolinput">
-                        <label for="input"  class="text">Job Title:</label>
+                        <label for="input" class="text">Job Title:</label>
                         <input type="text" id="filter-job" placeholder="Write here..." name="input" class="input">
                     </div>
                     <div>
-                
+
                         <button id="all">All</button>
                         <button id="filter">Filter</button>
                     </div>
@@ -96,8 +64,8 @@
             </div>
         </div>
         <div id="container-empleados">
-            
-    
+
+
         </div>
 
     </main>
@@ -108,7 +76,6 @@
         </div>
     </dialog>
     <script type="module" src="./assets/js/main.js"></script>
-    <script src="./assets/js/functions/validarCampo.js"></script>c
 </body>
 
 </html>

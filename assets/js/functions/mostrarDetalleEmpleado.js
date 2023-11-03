@@ -1,6 +1,4 @@
-import { empleados as empleado } from "../arrayEmpleados.js";
 import { setModal } from "./setModal.js";
-import { volverMayuscula } from "./volverMayuscula.js";
 
 export const mostrarDetalleEmpleado = (empleado) => {
     setModal();

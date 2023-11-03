@@ -378,9 +378,8 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 600;
     cursor: pointer;
   }
-  .form-title{
-    font-size: 50px;
-   }
+
+  
 
    li {
     padding: 12px;
@@ -390,6 +389,68 @@ input[type=number]::-webkit-outer-spin-button {
    .error{
     color: rgb(187, 44, 44);
   }
+
+  .container-rigth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   .form-login {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background:#1c1c1c;
+   max-height: 500px;
+    align-items: center;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #ebc42a;
+    border-radius: 8px;
+    color: white;
+    
+  }
+
+
+
+  
+  .controls {
+    width: 90%;
+    border: 1px solid yellow;
+    
+    padding: 11px 10px;
+    background: #252323;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    outline: none;    
+  }
+  
+  .buttons {
+    width: 95%;
+    height: 40px;
+    padding: 8px;
+    background: #ebc42a;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    border-radius: 8px;
+  }
+  
+  .buttons:hover {
+    background: yellow;
+    border: 1px solid white;
+  }
+  
+  .incorrecto {
+    border: solid 1px rgb(187, 44, 44);
+  }
+
   
 
    @media (min-width:450px){
@@ -412,6 +473,10 @@ header img{
     .form-title{
         display: none;
        }
+    .form-login{
+      border: none;
+      box-shadow: none;
+    }
 
    }
    @media (min-width:1200px){
@@ -461,71 +526,4 @@ header img{
        }
    }
 
-  .container-rigth{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-   .form-login {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    background:#1c1c1c;
-   max-height: 500px;
-    align-items: center;
-    box-shadow: 7px 13px 37px #000;
-    padding: 20px 30px;
-    border-top: 4px solid #ebc42a;
-    border-radius: 8px;
-    color: white;
-    
-  }
-
-
-
   
-  .controls {
-    width: 90%;
-    border: 1px solid yellow;
-    
-    padding: 11px 10px;
-    background: #252323;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    outline: none;    
-  }
-  
-  .buttons {
-    width: 95%;
-    height: 40px;
-    background: #ebc42a;
-    border-radius: 8px;
-    border: none;
-    color: white;
-    font-weight: 600;
-    margin-bottom: 16px;
-    cursor: pointer;
-    transition: ease-in-out 0.5s;
-    border-radius: 8px;
-  }
-  
-  .buttons:hover {
-    background: yellow;
-    border: 1px solid white;
-  }
-  
-
-  
-
-  
-
-  .correcto {
-    border: solid 1px green;
-  }
-  
-  .incorrecto {
-    border: solid 1px red;
-  }
