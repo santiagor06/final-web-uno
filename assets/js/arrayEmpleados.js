@@ -7,10 +7,10 @@ export const empleados=[
     new Empleado("Matias","Rojas","Administrador","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBEwvFP3FV1ou1fbGozZKWSXcj85YBnIL5m_sibjfkuZQm-cl5RzkmOz8EQELJYbEBFWo&usqp=CAU","Matias@email.com"),
     new Empleado("Daniela","Ruiz","Desarrollador Senior","https://img.freepik.com/fotos-premium/sonriente-joven-empresaria-empresaria-camisa-blanca-brazos-cruzados-pecho-como-profesional-pie-sobre-fondo-estudio_1258-87934.jpg?size=626&ext=jpg","Daniela@email.com"),
     new Empleado("Maria","Perez","Diseñador","https://media.istockphoto.com/id/1194830528/es/v%C3%ADdeo/retrato-de-mujer-africana-sonriente.jpg?s=640x640&k=20&c=-zQf6awJJ-yHRSBKJFnppHfkdTA2a50E642OSDTumW8=","Maria@email.com"),
-    new Empleado("Juan","Perez","Desarrollador Senior","https://photoprint.com.co/wp-content/uploads/2020/05/visa-americana9_217x150.jpg","Juan@email.com"),
+    new Empleado("Juan","Perez","Desarrollador junior","https://photoprint.com.co/wp-content/uploads/2020/05/visa-americana9_217x150.jpg","Juan@email.com"),
     new Empleado("Rodrigo","Hernandez","Desarrollador Senior","https://photoprint.com.co/wp-content/uploads/2020/05/pasaporte-alemana8_217x150.jpg","Rodrigo@email.com"),
-    new Empleado("Matias","Rojas","Administrador","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBEwvFP3FV1ou1fbGozZKWSXcj85YBnIL5m_sibjfkuZQm-cl5RzkmOz8EQELJYbEBFWo&usqp=CAU","Matias@email.com"),
-    new Empleado("Daniela","Ruiz","Desarrollador Senior","https://img.freepik.com/fotos-premium/sonriente-joven-empresaria-empresaria-camisa-blanca-brazos-cruzados-pecho-como-profesional-pie-sobre-fondo-estudio_1258-87934.jpg?size=626&ext=jpg","Daniela@email.com"),
+    new Empleado("Juan","Rojas","Administrador","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBEwvFP3FV1ou1fbGozZKWSXcj85YBnIL5m_sibjfkuZQm-cl5RzkmOz8EQELJYbEBFWo&usqp=CAU","Matias@email.com"),
+    new Empleado("Daniela","Ruiz","Desarrollador junior","https://img.freepik.com/fotos-premium/sonriente-joven-empresaria-empresaria-camisa-blanca-brazos-cruzados-pecho-como-profesional-pie-sobre-fondo-estudio_1258-87934.jpg?size=626&ext=jpg","Daniela@email.com"),
     new Empleado("Maria","Perez","Diseñador","https://media.istockphoto.com/id/1194830528/es/v%C3%ADdeo/retrato-de-mujer-africana-sonriente.jpg?s=640x640&k=20&c=-zQf6awJJ-yHRSBKJFnppHfkdTA2a50E642OSDTumW8=","Maria@email.com"),
 
 ];

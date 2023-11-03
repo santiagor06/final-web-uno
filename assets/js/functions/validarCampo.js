@@ -8,59 +8,58 @@ let correo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 let inputs = document.querySelectorAll("input");
 
 inputs.forEach((input) => {
-    input.addEventListener("keyup", validarCampos);
+    input.addEventListener("input", validarCampos);
   });
   function validarCampos(e) {
-
+    const button=document.querySelector("#btnIniciar")
+    let error=false;
     switch (e.target.name) {
       case "nombre":
-        if (nombre.test(e.target.value)) {
-          console.log("Cumple con la expresion");
-
-          document.getElementById("nombre").classList.add("correcto");
+        if (nombre.test(e.target.value) ) {
+          
+          
           document.getElementById("nombre").classList.remove("incorrecto");
         } else {
-          console.log("No cumple con la expresion");
+          error=true
           document.getElementById("nombre").classList.add("incorrecto");
-          document.getElementById("nombre").classList.remove("correcto");
+          button.disabled=true
+
         }
         break;
       case "apellido":
-        if (apellido.test(e.target.value)) {
-          console.log("Cumple con la expresion");
-          document.getElementById("apellido").classList.add("correcto");
+        if (apellido.test(e.target.value) ) {
           document.getElementById("apellido").classList.remove("incorrecto");
         } else {
-          console.log("No cumple con la expresion");
           document.getElementById("apellido").classList.add("incorrecto");
-          document.getElementById("apellido").classList.remove("correcto");
+          error=true
+          button.disabled=true
+
         }
         break;
       case "cargo":
         if (cargo.test(e.target.value)) {
-          console.log("Cumple con la expresion");
-          document.getElementById("cargo").classList.add("correcto");
           document.getElementById("cargo").classList.remove("incorrecto");
         } else {
-          console.log("No cumple con la expresion");
+          error=true
+          button.disabled=true
+
           document.getElementById("cargo").classList.add("incorrecto");
-          document.getElementById("cargo").classList.remove("correcto");
         }
         break;
         
         case "correo":
           if (correo.test(e.target.value)) {
-            console.log("Cumple con la expresion");
             
-            document.getElementById("correo").classList.add("correcto");
+            
             document.getElementById("correo").classList.remove("incorrecto");
           } else {
-            console.log("No cumple con la expresion");
-            
+          
+           error=true
+          button.disabled=true
+
             document.getElementById("correo").classList.add("incorrecto");
-            document.getElementById("correo").classList.remove("correcto");
           }
           break;
       }
-      
+      if(!error)button.disabled=false
     }

@@ -10,7 +10,7 @@ export const agregarEmpleado=()=>{
     let apellido=document.querySelector("#apellido").value
     let urlimg=document.querySelector("#urlimg").value
     let cargo=document.querySelector( "#cargo") .value
-
+if(nombre && correo && apellido && urlimg && cargo){
 
     let empleado = new Empleado()
     empleado.nombre=nombre
@@ -18,17 +18,21 @@ export const agregarEmpleado=()=>{
     empleado.cargo=cargo
     empleado.correo=correo
     empleado.imagen=urlimg
-
+    
     empleados.push(empleado)
-
+    
     mostrarEmpleados(empleados)
+    
+    
+    document.querySelector("#nombre").value=""
+    document.querySelector("#correo").value=""
+    document.querySelector("#apellido").value=""
+    document.querySelector("#urlimg").value=""
+    document.querySelector( "#cargo") .value=""
+}else alert("Fields are missing")
 
 
-document.querySelector("#nombre").value=""
-document.querySelector("#correo").value=""
-document.querySelector("#apellido").value=""
-document.querySelector("#urlimg").value=""
-document.querySelector( "#cargo") .value=""
+
 
     
 }
